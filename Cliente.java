@@ -5,7 +5,10 @@ import javax.swing.*;
 class TCPClient {
  public static void main(String argv[]) throws Exception
  {
-
+ // Crear la ventana principal
+    JFrame.setDefaultLookAndFeelDecorated(true);
+    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+    UIManager.put("swing.boldMetal", Boolean.FALSE);
   JFrame frame = new JFrame("Cálcular la nota fina del curso de calculo ");
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setSize(400, 300);
