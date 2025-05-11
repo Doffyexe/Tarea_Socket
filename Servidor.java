@@ -7,7 +7,7 @@ class TCPServer {
  String capitalizedSentence;
  
  ServerSocket welcomeSocket = new ServerSocket(6789);
-
+// Comentario en el servidor
  while(true) {
 
  Socket connectionSocket = welcomeSocket.accept();
